@@ -6,4 +6,6 @@
 
 
 
-segmento n m xs = drop (n-1)(take m xs)
+--segmento n m xs = drop (n-1)(take m xs)
+
+divisores n =  filter (\x -> mod n x == 0) [1..n]
